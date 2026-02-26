@@ -41,9 +41,9 @@ export default function Products() {
               key={product.name}
               className="glass-dark overflow-hidden max-w-sm w-full flex flex-col rounded-2xl border border-white/10"
             >
-              <h4 className="font-display text-white font-bold text-center py-5 m-0 text-xl tracking-wide">
+              <h3 className="font-display text-white font-bold text-center py-5 m-0 text-xl tracking-wide">
                 {product.name}
-              </h4>
+              </h3>
               <div className="relative w-full aspect-[4/3]">
                 <Image
                   src={product.image}

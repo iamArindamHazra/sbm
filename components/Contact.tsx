@@ -27,9 +27,9 @@ export default function Contact() {
           />
         </div>
         <div className="flex-1 glass-dark p-8 rounded-2xl border border-white/10">
-          <h4 className="font-display font-bold text-accent uppercase mb-3 text-sm tracking-wider">
+          <h3 className="font-display font-bold text-accent uppercase mb-3 text-sm tracking-wider">
             FACTORY & OFFICE
-          </h4>
+          </h3>
 
           <p className="m-0 mb-6 text-gray-200 leading-relaxed">
             {site.address.line1}
@@ -42,9 +42,9 @@ export default function Contact() {
           </p>
           {site.upcomingFactory && (
             <>
-              <h4 className="font-display font-bold text-accent uppercase mb-3 text-sm tracking-wider">
+              <h3 className="font-display font-bold text-accent uppercase mb-3 text-sm tracking-wider">
                 NEW FACTORY (OPENING SOON)
-              </h4>
+              </h3>
               <p className="m-0 mb-6 text-gray-200 leading-relaxed">
                 {site.upcomingFactory.address.line1}
                 <br />
@@ -52,9 +52,9 @@ export default function Contact() {
               </p>
             </>
           )}
-          <h4 className="font-display font-bold text-accent uppercase mb-3 text-sm tracking-wider">
+          <h3 className="font-display font-bold text-accent uppercase mb-3 text-sm tracking-wider">
             CONTACT INFORMATION
-          </h4>
+          </h3>
           <p className="m-0 mb-2 text-gray-200">
             {site.phones.map((phone, i) => (
               <span key={phone.tel}>

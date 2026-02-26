@@ -39,7 +39,7 @@ export default function Footer() {
             href={site.credits.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-accent hover:text-neon transition-colors focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-background rounded"
+            className="text-accent hover:text-neon underline underline-offset-2 transition-colors focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-background rounded"
           >
             {site.credits.name}
           </Link>

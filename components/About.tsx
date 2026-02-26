@@ -2,10 +2,7 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <section
-      id="about"
-      className="py-20 bg-background-alt overflow-x-hidden"
-    >
+    <section id="about" className="py-20 bg-background-alt overflow-x-hidden">
       <h2 className="font-display text-center text-accent text-3xl md:text-4xl m-0 font-semibold">
         Who we are?
       </h2>
@@ -25,22 +22,21 @@ export default function About() {
               <p className="text-justify m-0">
                 Sonar Bangla Muri, under Krishna Sagar Pvt. Ltd., is among the
                 leading puffed rice manufacturers in India since October 2009.
-                We make our products in West Bengal with care and deliver
-                across India and to the USA—trusted by distributors and bulk
-                buyers.
+                We make our products in West Bengal with care and deliver across
+                India and to the USA—trusted by distributors and bulk buyers.
               </p>
-              <h4 className="mt-4 mb-2 text-lg font-semibold text-accent">
+              <h3 className="mt-4 mb-2 text-lg font-semibold text-accent">
                 We maintain hygiene
-              </h4>
+              </h3>
               <p className="text-justify m-0">
                 Our factory has over 20 trained employees. We follow strict
                 hygiene: gloves, masks, and head caps are mandatory. Our
                 processes are FSSAI compliant so you get safe, consistent
                 quality every time.
               </p>
-              <h4 className="mt-4 mb-2 text-lg font-semibold text-accent">
+              <h3 className="mt-4 mb-2 text-lg font-semibold text-accent">
                 Care for the environment
-              </h4>
+              </h3>
               <p className="text-justify m-0">
                 We use pallet-based fuel in our production, which causes
                 negligible air pollution compared to conventional fuels. Quality

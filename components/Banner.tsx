@@ -83,7 +83,7 @@ export default function Banner() {
               href="#know"
               className="btn-neon-outline inline-flex items-center justify-center min-w-[11rem] py-3.5 text-center"
             >
-              Know More
+              Know more about puffed rice
             </Link>
           </div>
         </div>
@@ -93,7 +93,6 @@ export default function Banner() {
       <a
         href="#know"
         className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-1 text-white/70 hover:text-white transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-transparent rounded"
-        aria-label="Scroll to learn more"
       >
         <span className="text-xs font-medium tracking-widest uppercase pb-3">
           Explore

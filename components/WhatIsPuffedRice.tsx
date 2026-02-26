@@ -16,18 +16,18 @@ export default function WhatIsPuffedRice() {
                 snack across the Indian subcontinent—from street vendors to home
                 kitchens.
               </p>
-              <h4 className="mt-4 mb-2 text-lg font-semibold text-accent">
+              <h3 className="mt-4 mb-2 text-lg font-semibold text-accent">
                 Nutritional value
-              </h4>
+              </h3>
               <p className="text-justify m-0">
                 Muri is oil-free, low in fat, and naturally gluten-free. It is a
                 good source of iron and dietary fibre, helps with digestion, and
                 keeps you full without heavy calories—ideal for a healthy snack
                 or light meal.
               </p>
-              <h4 className="mt-4 mb-2 text-lg font-semibold text-accent">
+              <h3 className="mt-4 mb-2 text-lg font-semibold text-accent">
                 Did you know?
-              </h4>
+              </h3>
               <p className="text-justify m-0">
                 Iconic street foods like &apos;Jhalmuri&apos; in Kolkata,
                 &apos;Bhelpuri&apos; in Mumbai, and &apos;Churmuri&apos; in

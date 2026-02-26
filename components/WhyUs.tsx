@@ -76,9 +76,9 @@ export default function WhyUs() {
               <div className="glass inline-flex items-center justify-center w-20 h-20 rounded-full text-accent p-4 border-2 border-accent/30">
                 <FeatureIcon name={f.icon} />
               </div>
-              <h4 className="text-accent mt-4 font-semibold text-gray-100">
+              <h3 className="text-accent mt-4 font-semibold text-gray-100">
                 {f.title}
-              </h4>
+              </h3>
             </div>
           ))}
         </div>
