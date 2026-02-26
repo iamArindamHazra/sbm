@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth overflow-x-hidden;
+  }
+  body {
+    @apply bg-background overflow-x-hidden antialiased text-gray-100;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  .glass {
+    @apply rounded-xl border border-white/10 bg-white/5 backdrop-blur-xl shadow-glass;
+  }
+  .glass-dark {
+    @apply rounded-xl border border-white/10 bg-violet-950/40 backdrop-blur-xl shadow-glass;
+  }
+  .btn-neon {
+    @apply rounded-xl border-2 border-accent bg-primary/90 px-6 py-3 font-semibold text-white shadow-neon-sm transition-all duration-200 hover:border-neon hover:bg-primary hover:shadow-neon-md focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-background;
+  }
+  .btn-neon-outline {
+    @apply rounded-xl border-2 border-accent bg-transparent px-6 py-3 font-semibold text-white transition-all duration-200 hover:bg-accent/20 hover:shadow-neon-sm focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-background;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  from,
+  to {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}

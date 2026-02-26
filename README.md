@@ -8,6 +8,26 @@ They have over 20 employees in their factory and we ensure that they maintain pr
 
 They have a great care for the environment. We use 'Pallets' as their fuel which make negligible air pollution compared to other fuels.
 
-## Developer
+## Tech stack
 
-**Arindam Hazra** Developed their website
+- **Next.js 15** (App Router) with TypeScript
+- **Tailwind CSS** for styling; base theme in `theme/theme.ts` (design-system ready)
+- **ESLint** + **Prettier**
+
+## Development
+
+```bash
+npm install
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000).
+
+## Build
+
+```bash
+npm run build
+npm start
+```
+
+For static export (e.g. S3, GitHub Pages), set `output: 'export'` in `next.config.ts` and run `npm run build`; output will be in `out/`.
