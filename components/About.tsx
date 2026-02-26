@@ -19,7 +19,7 @@ export default function About() {
               />
             </div>
             <div className="flex-1 lg:pl-8 text-gray-200">
-              <p className="text-justify m-0">
+              <p className=" m-0">
                 Sonar Bangla Muri, under Krishna Sagar Pvt. Ltd., is among the
                 leading puffed rice manufacturers in India since October 2009.
                 We make our products in West Bengal with care and deliver across
@@ -28,7 +28,7 @@ export default function About() {
               <h3 className="mt-4 mb-2 text-lg font-semibold text-accent">
                 We maintain hygiene
               </h3>
-              <p className="text-justify m-0">
+              <p className=" m-0">
                 Our factory has over 20 trained employees. We follow strict
                 hygiene: gloves, masks, and head caps are mandatory. Our
                 processes are FSSAI compliant so you get safe, consistent
@@ -37,7 +37,7 @@ export default function About() {
               <h3 className="mt-4 mb-2 text-lg font-semibold text-accent">
                 Care for the environment
               </h3>
-              <p className="text-justify m-0">
+              <p className=" m-0">
                 We use pallet-based fuel in our production, which causes
                 negligible air pollution compared to conventional fuels. Quality
                 muri and a cleaner planet go hand in hand at Sonar Bangla Muri.

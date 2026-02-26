@@ -38,7 +38,7 @@ export default function Products() {
       className="relative py-24 bg-gradient-to-br from-primary/30 via-background-muted to-primary/20 overflow-x-hidden"
       aria-labelledby="products-heading"
     >
-      <div className="w-[80%] max-w-6xl mx-auto relative z-10">
+      <div className="w-[90%] md:w-[80%] max-w-6xl mx-auto relative z-10">
         <div className="text-center mb-12 md:mb-16">
           <h2
             id="products-heading"

@@ -5,7 +5,7 @@ export default function Banner() {
   return (
     <section
       id="home"
-      className="relative min-h-[80vh] flex flex-col justify-center items-center text-center overflow-hidden"
+      className="relative min-h-[80vh] flex flex-col justify-center items-center text-center overflow-hidden pt-24 md:pt-32"
       aria-label="Hero"
     >
       {/* Background image */}

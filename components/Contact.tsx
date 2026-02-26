@@ -15,7 +15,7 @@ export default function Contact() {
         ordering. For home use, buy directly from our factory or from nearby
         grocery shops that stock our products.
       </p>
-      <div className="w-[80%] max-w-6xl mx-auto flex flex-col lg:flex-row gap-10">
+      <div className="w-[90%] md:w-[80%] max-w-6xl mx-auto flex flex-col lg:flex-row gap-10">
         <div className="flex-1 min-w-0 rounded-2xl overflow-hidden border border-white/10 shadow-glass">
           <LazyMap
             src={site.mapsEmbedUrl}

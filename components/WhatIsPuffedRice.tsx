@@ -10,7 +10,7 @@ export default function WhatIsPuffedRice() {
         <div className="glass-dark p-8 md:p-10">
           <div className="flex flex-col lg:flex-row items-center gap-10">
             <div className="flex-1 lg:mr-8 lg:ml-4 text-gray-200">
-              <p className="text-justify m-0">
+              <p className=" m-0">
                 Puffed rice (Muri) is a light, crispy snack made by heating rice
                 grains under controlled conditions. It is a staple breakfast and
                 snack across the Indian subcontinent—from street vendors to home
@@ -19,7 +19,7 @@ export default function WhatIsPuffedRice() {
               <h3 className="mt-4 mb-2 text-lg font-semibold text-accent">
                 Nutritional value
               </h3>
-              <p className="text-justify m-0">
+              <p className=" m-0">
                 Muri is oil-free, low in fat, and naturally gluten-free. It is a
                 good source of iron and dietary fibre, helps with digestion, and
                 keeps you full without heavy calories—ideal for a healthy snack
@@ -28,7 +28,7 @@ export default function WhatIsPuffedRice() {
               <h3 className="mt-4 mb-2 text-lg font-semibold text-accent">
                 Did you know?
               </h3>
-              <p className="text-justify m-0">
+              <p className=" m-0">
                 Iconic street foods like &apos;Jhalmuri&apos; in Kolkata,
                 &apos;Bhelpuri&apos; in Mumbai, and &apos;Churmuri&apos; in
                 Bangalore are all made with puffed rice. Muri is loved by all

@@ -35,7 +35,7 @@ const reviews = [
 export default function Reviews() {
   return (
     <section className="py-20 bg-background">
-      <div className="w-[80%] max-w-6xl mx-auto">
+      <div className="w-[90%] md:w-[80%] max-w-6xl mx-auto">
         <div className="text-center max-w-2xl mx-auto">
           <h2 className="font-display text-accent text-3xl md:text-4xl m-0 font-semibold">
             Customer reviews

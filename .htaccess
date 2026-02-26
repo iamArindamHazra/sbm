@@ -1,8 +1,8 @@
-ErrorDocument 400 http://https://banglamuri.in/
-ErrorDocument 401 http://https://banglamuri.in/
-ErrorDocument 403 http://https://banglamuri.in/
-ErrorDocument 404 http://https://banglamuri.in/
-ErrorDocument 503 http://https://banglamuri.in/
+ErrorDocument 400 http://https://krishnasagar.net/
+ErrorDocument 401 http://https://krishnasagar.net/
+ErrorDocument 403 http://https://krishnasagar.net/
+ErrorDocument 404 http://https://krishnasagar.net/
+ErrorDocument 503 http://https://krishnasagar.net/
 SetEnv TZ India/Kolkata
 # secure directory by disabling script execution
 AddHandler cgi-script .php .pl .py .jsp .asp .htm .html .shtml .sh .cgi
