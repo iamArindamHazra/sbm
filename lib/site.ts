@@ -57,17 +57,14 @@ export const site = {
       {
         name: "Facebook",
         href: "https://www.facebook.com/sonarbanglamuri/",
-        image: "/img/facebook.webp",
       },
       {
         name: "WhatsApp",
         href: `https://wa.me/${whatsappNumber}`,
-        image: "/img/whatsapp.webp",
       },
       {
-        name: "Gmail",
+        name: "Email",
         href: `mailto:${this.emailAlt}`,
-        image: "/img/gmail.webp",
       },
     ];
   },

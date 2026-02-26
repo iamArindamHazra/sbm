@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
+import { SocialIcon } from "react-social-icons";
 import { site } from "@/lib/site";
 
 export default function Footer() {
@@ -10,24 +10,24 @@ export default function Footer() {
       <div className="w-[80%] max-w-6xl mx-auto text-center">
         <div className="flex flex-wrap justify-center gap-4 mb-6">
           {site.social.map((link) => (
-            <Link
+            <a
               key={link.name}
               href={link.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-gray-300 hover:text-accent transition-colors focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-background rounded text-sm"
+              aria-label={link.name}
+              className="inline-flex items-center gap-0.5 text-gray-300 hover:text-accent transition-colors focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-background rounded text-sm"
             >
-              <span className="relative inline-block w-5 h-5 shrink-0">
-                <Image
-                  src={link.image}
-                  alt=""
-                  fill
-                  sizes="20px"
-                  className="object-contain"
-                />
-              </span>
+              <SocialIcon
+                url={link.href}
+                as="span"
+                bgColor="transparent"
+                fgColor="currentColor"
+                className="[&_.social-svg-icon]:!fill-current"
+                style={{ width: 32, height: 32, display: "inline-block" }}
+              />
               <span>{link.name}</span>
-            </Link>
+            </a>
           ))}
         </div>
         <p className="m-0">

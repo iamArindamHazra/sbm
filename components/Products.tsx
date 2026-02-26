@@ -1,29 +1,32 @@
 import Link from "next/link";
 import Image from "next/image";
+import { CheckCircleIcon } from "@heroicons/react/24/outline";
 
 const products = [
   {
-    name: "LAGHU",
+    name: "Laghu",
     image: "/img/laghu.webp",
+    tagline: "Everyday standard puffed rice for families",
+    grade: "Standard",
+    packSizes: "1kg · 500g · 250g",
     points: [
-      "Completely Machine Made",
-      "Fresh, Pure & Stone free",
-      "Well Puffed",
-      "Healthy & Tasty",
-      "1kg, 500g, 250g Packets",
-      "Long Grains",
+      "Completely machine made & stone free",
+      "Fresh, pure and consistently well puffed",
+      "Light, crispy texture with long grains",
+      "Ideal for daily snacks and home recipes",
     ],
   },
   {
-    name: "LALAT",
+    name: "Lalat",
     image: "/img/lalat.webp",
+    tagline: "Extra-long, premium puffed rice for special mixes",
+    grade: "Premium",
+    packSizes: "1kg · 500g · 250g",
     points: [
-      "Completely Machine Made",
-      "Fresh, Pure & Stone free",
-      "Well Puffed",
-      "Healthy & More Tasty",
-      "1kg, 500g, 250g Packets",
-      "Longer Grains",
+      "Completely machine made & stone free",
+      "Fresh, pure and extra well puffed",
+      "Longer grains for a richer mouthfeel",
+      "Perfect for Jhalmuri, Bhelpuri & export",
     ],
   },
 ];
@@ -32,43 +35,102 @@ export default function Products() {
   return (
     <section
       id="products"
-      className="relative py-20 bg-gradient-to-br from-primary/30 via-background-muted to-primary/20 overflow-x-hidden"
+      className="relative py-24 bg-gradient-to-br from-primary/30 via-background-muted to-primary/20 overflow-x-hidden"
+      aria-labelledby="products-heading"
     >
       <div className="w-[80%] max-w-6xl mx-auto relative z-10">
-        <div className="grid md:grid-cols-2 gap-10 justify-items-center">
+        <div className="text-center mb-12 md:mb-16">
+          <h2
+            id="products-heading"
+            className="font-display text-accent text-3xl md:text-4xl m-0 font-semibold tracking-tight"
+          >
+            Our product range
+          </h2>
+          <p className="mt-4 max-w-2xl mx-auto text-sm md:text-base text-gray-100/80">
+            Choose the right puffed rice grade for your business or home use.
+            Both variants are FSSAI compliant, pure and carefully processed for
+            consistent quality.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-6 justify-items-center">
           {products.map((product) => (
-            <div
+            <article
               key={product.name}
-              className="glass-dark overflow-hidden max-w-sm w-full flex flex-col rounded-2xl border border-white/10"
+              className="group relative max-w-sm "
+              aria-label={product.name}
             >
-              <h3 className="font-display text-white font-bold text-center py-5 m-0 text-xl tracking-wide">
-                {product.name}
-              </h3>
-              <div className="relative w-full aspect-[4/3]">
-                <Image
-                  src={product.image}
-                  alt={product.name}
-                  fill
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  className="object-cover"
-                />
+              <div
+                className="pointer-events-none absolute inset-0 rounded-3xl bg-[radial-gradient(circle_at_top,_rgba(244,244,245,0.18)_0,_transparent_55%),radial-gradient(circle_at_bottom,_rgba(167,139,250,0.3)_0,_transparent_55%)] opacity-60 group-hover:opacity-100 blur-xl transition duration-500"
+                aria-hidden
+              />
+              <div className="relative flex flex-col h-full overflow-hidden rounded-3xl border border-white/15 bg-white/5 backdrop-blur-2xl shadow-[0_18px_45px_rgba(15,10,30,0.95),0_0_0_1px_rgba(255,255,255,0.05)] transition duration-300 group-hover:-translate-y-1 group-hover:shadow-[0_22px_60px_rgba(15,10,30,1),0_0_0_1px_rgba(255,255,255,0.08)]">
+                <header className="px-6 pt-5 pb-4 flex items-start justify-between gap-3">
+                  <div>
+                    <h3 className="font-display text-white font-semibold text-xl md:text-2xl tracking-wide m-0">
+                      {product.name}
+                    </h3>
+                    <p className="mt-1 text-xs md:text-sm text-gray-100/80">
+                      {product.tagline}
+                    </p>
+                  </div>
+                  <span className="inline-flex items-center rounded-full border border-accent/80 bg-accent/20 px-3 py-1 text-[11px] md:text-xs font-semibold whitespace-nowrap uppercase tracking-widest text-accent">
+                    {product.grade}
+                  </span>
+                </header>
+
+                <div className="relative w-full aspect-[4/3] overflow-hidden border-y border-white/5">
+                  <Image
+                    src={product.image}
+                    alt={product.name}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    className="object-cover transition duration-500 group-hover:scale-105"
+                  />
+                </div>
+
+                <div className="px-6 pt-5 pb-4 flex-1 flex flex-col">
+                  <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-accent mb-3">
+                    Key benefits
+                  </p>
+                  <ul className="list-none p-0 m-0 space-y-2.5 text-sm md:text-base text-gray-100">
+                    {product.points.map((p) => (
+                      <li key={p} className="flex items-start gap-2.5">
+                        <span
+                          className="mt-[3px] inline-flex h-4 w-4 items-center justify-center rounded-full bg-accent/25 text-accent shadow-neon-sm"
+                          aria-hidden
+                        >
+                          <CheckCircleIcon
+                            className="h-4 w-4"
+                            aria-hidden="true"
+                          />
+                        </span>
+                        <span>{p}</span>
+                      </li>
+                    ))}
+                  </ul>
+
+                  <div className="mt-4 flex items-center justify-between text-xs md:text-sm text-gray-100/80">
+                    <span className="inline-flex items-center gap-1">
+                      <span className="h-1.5 w-1.5 rounded-full bg-accent" />
+                      <span className="font-medium tracking-wide">
+                        Pack sizes:
+                      </span>
+                    </span>
+                    <span className="font-semibold">{product.packSizes}</span>
+                  </div>
+                </div>
+
+                <div className="px-6 pb-5 pt-1">
+                  <Link
+                    href="#contact"
+                    className="btn-neon block w-full text-center py-3 text-sm md:text-base tracking-wide"
+                  >
+                    Enquire / Place order
+                  </Link>
+                </div>
               </div>
-              <div className="p-5 flex-1">
-                <ul className="list-none p-0 m-0 space-y-2 text-base text-gray-100">
-                  {product.points.map((p) => (
-                    <li key={p}>{p}</li>
-                  ))}
-                </ul>
-              </div>
-              <div className="p-5">
-                <Link
-                  href="#contact"
-                  className="btn-neon block w-full text-center"
-                >
-                  Buy Now
-                </Link>
-              </div>
-            </div>
+            </article>
           ))}
         </div>
       </div>
