@@ -7,14 +7,14 @@ import { site } from "@/lib/site";
 import StructuredData from "@/components/StructuredData";
 
 const jakarta = Plus_Jakarta_Sans({
-  weight: ["400", "500", "600", "700"],
+  weight: ["400", "700"],
   subsets: ["latin"],
   variable: "--font-jakarta",
   display: "swap",
 });
 
 const outfit = Outfit({
-  weight: ["500", "600", "700"],
+  weight: ["600"],
   subsets: ["latin"],
   variable: "--font-outfit",
   display: "swap",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     siteName: site.name,
     images: [
       {
-        url: "/img/website1200.jpg",
+        url: "/img/website1200.webp",
         width: 1200,
         height: 630,
         alt: `${site.name} puffed rice packaging and factory`,
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     description: `FSSAI-approved puffed rice from West Bengal. Bulk orders in India & USA. ${site.company}.`,
     images: [
       {
-        url: "/img/website1200.jpg",
+        url: "/img/website1200.webp",
         width: 1200,
         height: 630,
         alt: `${site.name} puffed rice packaging and factory`,
@@ -68,7 +68,7 @@ const organizationSchema = {
   "@type": "Organization",
   name: site.name,
   url: site.url,
-  logo: `${site.url}/img/logo2.png`,
+  logo: `${site.url}/img/logo2.webp`,
   sameAs: site.social.map((social) => social.href),
   contactPoint: [
     {
@@ -91,7 +91,7 @@ const localBusinessSchema = {
   "@type": "LocalBusiness",
   name: site.name,
   url: site.url,
-  image: `${site.url}/img/website1200.jpg`,
+  image: `${site.url}/img/website1200.webp`,
   telephone: site.phones[0]?.tel ?? "",
   email: site.email,
   address: {

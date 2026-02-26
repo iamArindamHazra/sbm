@@ -4,7 +4,7 @@ import Image from "next/image";
 const products = [
   {
     name: "LAGHU",
-    image: "/img/laghu.jpg",
+    image: "/img/laghu.webp",
     points: [
       "Completely Machine Made",
       "Fresh, Pure & Stone free",
@@ -16,7 +16,7 @@ const products = [
   },
   {
     name: "LALAT",
-    image: "/img/lalat.jpg",
+    image: "/img/lalat.webp",
     points: [
       "Completely Machine Made",
       "Fresh, Pure & Stone free",

@@ -11,7 +11,7 @@ export default function Banner() {
       {/* Background image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/img/banner.jpg"
+          src="/img/banner.webp"
           alt=""
           fill
           priority

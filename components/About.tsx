@@ -11,7 +11,7 @@ export default function About() {
           <div className="flex flex-col lg:flex-row items-center gap-10">
             <div className="flex-shrink-0 w-64 h-60 md:w-80 md:h-60 relative rounded-2xl overflow-hidden border border-white/10 shadow-neon-sm order-2 lg:order-1">
               <Image
-                src="/img/packet.jpg"
+                src="/img/packet.webp"
                 alt="Sonar Bangla Muri packet"
                 fill
                 sizes="(max-width: 768px) 256px, 320px"

@@ -15,7 +15,7 @@ export default function Home() {
     {
       "@type": "Product",
       name: "LAGHU",
-      image: `${site.url}/img/laghu.jpg`,
+      image: `${site.url}/img/laghu.webp`,
       brand: site.name,
       description:
         "LAGHU puffed rice – completely machine-made, fresh, pure, stone-free, with long grains and multiple packet sizes.",
@@ -23,7 +23,7 @@ export default function Home() {
     {
       "@type": "Product",
       name: "LALAT",
-      image: `${site.url}/img/lalat.jpg`,
+      image: `${site.url}/img/lalat.webp`,
       brand: site.name,
       description:
         "LALAT puffed rice – machine-made, fresh, pure, stone-free, with longer grains and multiple packet sizes.",

@@ -37,7 +37,7 @@ export default function WhatIsPuffedRice() {
             </div>
             <div className="flex-shrink-0 w-64 h-60 md:w-80 md:h-60 relative rounded-2xl overflow-hidden border border-white/10 shadow-neon-sm">
               <Image
-                src="/img/jhalmuri.jpg"
+                src="/img/jhalmuri.webp"
                 alt="Jhalmuri"
                 fill
                 sizes="(max-width: 768px) 256px, 320px"

@@ -31,7 +31,7 @@ export default function Header() {
           onClick={() => setMenuOpen(false)}
         >
           <Image
-            src="/img/logo2.png"
+            src="/img/logo2.webp"
             alt="Sonar Bangla Muri"
             width={50}
             height={50}

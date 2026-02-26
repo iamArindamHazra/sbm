@@ -1,4 +1,5 @@
 import { site } from "@/lib/site";
+import LazyMap from "@/components/LazyMap";
 
 export default function Contact() {
   const whatsappHref = site.social.find((s) => s.name === "WhatsApp")?.href;
@@ -16,14 +17,12 @@ export default function Contact() {
       </p>
       <div className="w-[80%] max-w-6xl mx-auto flex flex-col lg:flex-row gap-10">
         <div className="flex-1 min-w-0 rounded-2xl overflow-hidden border border-white/10 shadow-glass">
-          <iframe
+          <LazyMap
             src={site.mapsEmbedUrl}
+            title={`${site.name} location`}
             width={600}
             height={450}
-            style={{ border: 0, maxWidth: "100%" }}
-            allowFullScreen
-            title={`${site.name} location`}
-            className="w-full rounded-2xl"
+            className="w-full"
           />
         </div>
         <div className="flex-1 glass-dark p-8 rounded-2xl border border-white/10">

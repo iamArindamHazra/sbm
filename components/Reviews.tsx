@@ -2,17 +2,17 @@ import Image from "next/image";
 
 const reviews = [
   {
-    avatar: "/img/avatar1.jpg",
+    avatar: "/img/avatar1.webp",
     name: "Retailer, Kolkata",
     text: "We take muri from them since five years. Quality is good, no stone in muri. Customers are coming again and again. Delivery also good. When we call they are giving proper reply.",
   },
   {
-    avatar: "/img/avatar2.jpg",
+    avatar: "/img/avatar2.webp",
     name: "Distributor, Bardhaman",
     text: "Best muri in our area. We are supplying to many cities. Sonar Bangla muri is always good—fresh packet, good packing. FSSAI also there. We are trusting this name for wholesale.",
   },
   {
-    avatar: "/img/avatar1.jpg",
+    avatar: "/img/avatar1.webp",
     name: "Local buyer, Durgapur",
     text: "When we go Galsi we are buying from factory—packet and loose both. Muri is crisp, no bad smell. Family is liking very much for jhalmuri and morning. Trip is worth.",
   },
