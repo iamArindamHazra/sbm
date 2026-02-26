@@ -181,7 +181,7 @@ export default function Banner() {
 
       {/* Scroll indicator */}
       <a
-        href="#know"
+        href="#stats"
         className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-1 text-white/70 hover:text-white transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-transparent rounded"
       >
         <span className="text-xs font-medium tracking-widest uppercase pb-3">

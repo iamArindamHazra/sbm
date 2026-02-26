@@ -10,6 +10,7 @@ export default function Stats() {
     <section
       className="py-16 md:py-20 bg-background border-t border-white/10"
       aria-label="Company at a glance"
+      id="stats"
     >
       <div className="w-[90%] max-w-5xl mx-auto">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">

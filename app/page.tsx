@@ -14,7 +14,7 @@ export default function Home() {
   const productSchemas = [
     {
       "@type": "Product",
-      name: "LAGHU",
+      name: "Laghu",
       image: `${site.url}/img/laghu.webp`,
       brand: site.name,
       description:
@@ -22,7 +22,7 @@ export default function Home() {
     },
     {
       "@type": "Product",
-      name: "LALAT",
+      name: "Lalat",
       image: `${site.url}/img/lalat.webp`,
       brand: site.name,
       description:
