@@ -22,6 +22,9 @@ const outfit = Outfit({
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
+  icons: {
+    icon: "/img/favicon.ico",
+  },
   title: `${site.name} - The Best Puffed Rice (Muri), Good quality Muri, Galsi, Bardhaman, India, ${site.company}`,
   description: `${site.name}—premium FSSAI-approved puffed rice from West Bengal since 2009. Machine-made, pure, stone-free. Bulk orders across India & USA. Visit our factory for packaged or loose muri. ${site.company}.`,
   keywords:

@@ -146,7 +146,7 @@ export default function Header() {
                 className="block text-lg font-medium text-gray-100 no-underline hover:text-accent transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-transparent rounded"
                 // onClick={() => setMenuOpen(false)}
               >
-                {link.label}h
+                {link.label}
               </Link>
             </li>
           ))}
