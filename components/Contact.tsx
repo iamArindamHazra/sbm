@@ -5,11 +5,11 @@ export default function Contact() {
   const whatsappHref = site.social.find((s) => s.name === "WhatsApp")?.href;
 
   return (
-    <section id="contact" className="py-20 bg-background-alt">
+    <section id="contact" className="py-12 sm:py-24 bg-background-alt">
       <h2 className="font-display text-center text-accent text-3xl md:text-4xl m-0 font-semibold">
         Contact Us
       </h2>
-      <p className="text-center mt-4 mb-12 text-gray-300 max-w-xl mx-auto">
+      <p className="text-center mt-4 mb-12 text-gray-300 max-w-xl mx-auto w-[90%]">
         We take bulk orders only. For big orders, dealerships, or export (India
         & USA), get in touch—we can send samples if you want to try before
         ordering. For home use, buy directly from our factory or from nearby
@@ -25,7 +25,7 @@ export default function Contact() {
             className="w-full"
           />
         </div>
-        <div className="flex-1 glass-dark p-8 rounded-2xl border border-white/10">
+        <div className="flex-1 glass-dark p-6 rounded-2xl border border-white/10">
           <h3 className="font-display font-bold text-accent uppercase mb-3 text-sm tracking-wider">
             FACTORY & OFFICE
           </h3>

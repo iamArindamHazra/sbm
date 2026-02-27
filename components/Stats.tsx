@@ -8,7 +8,7 @@ const stats = [
 export default function Stats() {
   return (
     <section
-      className="py-16 md:py-20 bg-background border-t border-white/10"
+      className="py-16 md:py-12 sm:py-24 bg-background border-t border-white/10"
       aria-label="Company at a glance"
       id="stats"
     >

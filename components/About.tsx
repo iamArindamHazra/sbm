@@ -2,12 +2,12 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <section id="about" className="py-20 bg-background-alt overflow-x-hidden">
+    <section id="about" className="py-12 sm:py-24 bg-background-alt overflow-x-hidden">
       <h2 className="font-display text-center text-accent text-3xl md:text-4xl m-0 font-semibold">
         Who we are?
       </h2>
-      <div className="w-[80%] max-w-6xl mx-auto mt-12">
-        <div className="glass-dark p-8 md:p-10">
+      <div className="w-[90%] max-w-6xl mx-auto mt-12">
+        <div className="glass-dark p-6 md:p-10">
           <div className="flex flex-col lg:flex-row items-center gap-10">
             <div className="flex-shrink-0 w-64 h-60 md:w-80 md:h-60 relative rounded-2xl overflow-hidden border border-white/10 shadow-neon-sm order-2 lg:order-1">
               <Image

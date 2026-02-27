@@ -164,7 +164,7 @@ export default function Banner() {
                   <div className="relative mx-auto mt-1 aspect-[4/3] w-48 sm:w-56 md:w-64 lg:w-72">
                     <div className="absolute inset-4 rounded-[1.9rem] bg-gradient-to-br from-white/25 via-white/5 to-white/0 blur-xl" />
                     <div className="relative h-full w-full rounded-[1.9rem] border border-white/25 bg-gradient-to-br from-amber-100 via-amber-50 to-slate-100 shadow-[0_40px_80px_rgba(15,23,42,0.7)] flex flex-col items-center justify-center overflow-hidden">
-                      <div className="relative h-16  sm:h-32 sm:w-52 mb-3">
+                      <div className="relative h-16 w-40 sm:h-32 sm:w-52 mb-3">
                         <Image
                           src="/img/sbm_eng_flat_by_kspl2.svg"
                           alt="Sonar Bangla Muri"
@@ -210,10 +210,10 @@ export default function Banner() {
                   <div className="mt-1 grid grid-cols-2 gap-3 text-[0.7rem] sm:text-xs text-white/80">
                     <div className="rounded-xl border border-white/15 bg-white/5 p-3">
                       <div className="text-[0.65rem] uppercase tracking-[0.16em] text-white/60">
-                        Popular packs
+                        Available packs
                       </div>
                       <div className="mt-1 text-xs font-semibold text-white">
-                        250g · 500g · 1kg
+                        250g · 500g · 1kg · Custom size
                       </div>
                     </div>
                     <div className="rounded-xl border border-white/15 bg-white/5 p-3">

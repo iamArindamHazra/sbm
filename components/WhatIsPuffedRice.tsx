@@ -2,12 +2,15 @@ import Image from "next/image";
 
 export default function WhatIsPuffedRice() {
   return (
-    <section id="know" className="py-24 overflow-x-hidden bg-background">
+    <section
+      id="know"
+      className="py-12 sm:py-24 overflow-x-hidden bg-background"
+    >
       <h2 className="font-display text-center text-accent text-3xl md:text-4xl m-0 font-semibold">
         What is puffed rice?
       </h2>
-      <div className="w-[80%] max-w-6xl mx-auto mt-12">
-        <div className="glass-dark p-8 md:p-10">
+      <div className="w-[90%] max-w-6xl mx-auto mt-12">
+        <div className="glass-dark p-6 md:p-10">
           <div className="flex flex-col lg:flex-row items-center gap-10">
             <div className="flex-1 lg:mr-8 lg:ml-4 text-gray-200">
               <p className=" m-0">

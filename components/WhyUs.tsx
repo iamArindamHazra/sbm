@@ -36,12 +36,12 @@ export default function WhyUs() {
   return (
     <section
       id="why"
-      className="py-24 bg-background-muted relative overflow-x-hidden"
+      className="py-12 sm:py-24 bg-background-muted relative overflow-x-hidden"
     >
       <h2 className="font-display text-center text-accent text-3xl md:text-4xl m-0 font-semibold">
         Why to choose us?
       </h2>
-      <div className="w-[90%] md:w-[80%] max-w-6xl mx-auto relative z-10 mt-14 mb-10">
+      <div className="w-[90%] md:w-[90%] max-w-6xl mx-auto relative z-10 mt-14 mb-10">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 justify-items-center">
           {features.map((f) => (
             <div key={f.title} className="text-center">

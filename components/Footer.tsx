@@ -7,7 +7,7 @@ export default function Footer() {
 
   return (
     <footer className="border-t border-white/10 bg-violet-950/40 backdrop-blur-xl py-12 text-gray-200">
-      <div className="w-[80%] max-w-6xl mx-auto text-center">
+      <div className="w-[90%] max-w-6xl mx-auto text-center">
         <div className="flex flex-wrap justify-center gap-4 mb-6">
           {site.social.map((link) => (
             <a

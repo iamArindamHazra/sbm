@@ -14,7 +14,7 @@ const cities = [
 
 export default function Cities() {
   return (
-    <section className="w-[80%] max-w-6xl mx-auto py-20">
+    <section className="w-[90%] max-w-6xl mx-auto py-12 sm:py-24">
       <h2 className="font-display text-center text-accent text-3xl md:text-4xl m-0 font-semibold">
         We deliver across India & USA
       </h2>
