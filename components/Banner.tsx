@@ -5,7 +5,7 @@ export default function Banner() {
   return (
     <section
       id="home"
-      className="relative min-h-[80vh] flex flex-col justify-center items-center text-center overflow-hidden pt-24 md:pt-32"
+      className="relative  flex flex-col justify-center items-center text-center pt-24 md:pt-28"
       aria-label="Hero"
     >
       {/* Background image */}
@@ -16,7 +16,7 @@ export default function Banner() {
           fill
           priority
           sizes="100vw"
-          className="object-cover scale-105"
+          className="object-cover scale-100"
         />
         {/* Layered overlays: vignette + gradient for depth and readability */}
         <div
@@ -34,144 +34,197 @@ export default function Banner() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 w-full max-w-6xl mx-auto px-6 py-14 md:py-32">
+      <div className="relative z-10 w-full max-w-6xl mx-auto pb-28 sm:pb-16 px-6 py-6">
         {/* Glass content card for focus and readability */}
-        <div className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.3),0_0_0_1px_rgba(255,255,255,0.05)] px-8 py-12 md:px-14 md:py-16">
-          <div className="grid gap-10 md:grid-cols-[minmax(0,3fr)_minmax(0,2.5fr)] items-center text-left md:text-left">
+        <div className="rounded-3xl border border-white/12 bg-white/5 backdrop-blur-2xl shadow-[0_18px_60px_rgba(0,0,0,0.55),0_0_0_1px_rgba(255,255,255,0.06)] px-6 py-4 sm:px-8 sm:py-12 md:px-12 md:py-14 lg:px-16 lg:py-16">
+          <div className="grid gap-10 lg:gap-14 md:grid-cols-[minmax(0,3fr)_minmax(0,2.2fr)] items-center text-left">
+            {/* Left: Brand + sales copy */}
             <div>
-              {/* Badge */}
-              <span
-                className="inline-block rounded-full border-2 border-accent/80 bg-accent/25 px-5 py-2 text-base md:text-lg font-semibold text-white tracking-wide shadow-neon-sm animate-[fade-in-up_0.7s_ease-out_both]"
-                style={{ animationDelay: "0.1s" }}
+              {/* Big logo strip */}
+              <div
+                className="hidden sm:inline-flex items-center gap-4 rounded-full bg-black/40 px-4 py-2 ring-1 ring-white/15 animate-[fade-in-up_0.7s_ease-out_both]"
+                style={{ animationDelay: "0.08s" }}
               >
-                Premium puffed rice · Est. 2009
-              </span>
+                <div className="text-[0.7rem] sm:text-xs font-semibold uppercase tracking-[0.26em] text-white/80">
+                  Trusted quality · FSSAI approved
+                </div>
+              </div>
 
-              {/* Main title — split for impact */}
-              <h1 className="mt-6 font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white tracking-tight drop-shadow-[0_0_32px_rgba(167,139,250,0.35)]">
+              {/* Main sales headline */}
+              <h1 className="mt-7 font-display text-[2.6rem] leading-[1.05] sm:text-[3rem] md:text-[3.5rem] lg:text-[3.9rem] font-bold text-white tracking-tight drop-shadow-[0_0_40px_rgba(167,139,250,0.55)]">
                 <span
                   className="block animate-[fade-in-up_0.7s_ease-out_both]"
-                  style={{ animationDelay: "0.25s" }}
+                  style={{ animationDelay: "0.2s" }}
                 >
-                  SONAR BANGLA
+                  For your family
+                  <span className="ml-2 bg-gradient-to-r from-neon-glow to-accent bg-clip-text text-transparent">
+                    and your customers
+                  </span>
                 </span>
+                Sonar Bangla
                 <span
-                  className="block mt-1 bg-gradient-to-r from-neon-glow to-accent bg-clip-text text-transparent animate-[fade-in-up_0.7s_ease-out_both]"
-                  style={{ animationDelay: "0.4s" }}
+                  className="mt-2 bg-gradient-to-r ml-2 from-accent via-amber-300 to-amber-100 bg-clip-text text-transparent animate-[fade-in-up_0.7s_ease-out_both]"
+                  style={{ animationDelay: "0.28s" }}
                 >
-                  MURI
+                  Muri
                 </span>
               </h1>
 
               <p
-                className="mt-6 text-lg md:text-xl text-white/90 font-medium tracking-wide max-w-xl animate-[fade-in-up_0.7s_ease-out_both]"
-                style={{ animationDelay: "0.55s" }}
+                className="mt-6 text-base sm:text-lg md:text-xl text-white/90 font-medium tracking-wide max-w-xl animate-[fade-in-up_0.7s_ease-out_both]"
+                style={{ animationDelay: "0.4s" }}
               >
-                FSSAI approved, stone-free puffed rice trusted by wholesalers,
-                retailers across India & USA.
+                Make every evening snack, jhal muri or chaat feel lighter with
+                clean, stone-free muri that people enjoy at home and keep coming
+                back to in your shop for{" "}
+                <span className="font-semibold">Sonar Bangla</span>.
               </p>
               <p
-                className="mt-3 text-sm md:text-base text-white/80 max-w-xl animate-[fade-in-up_0.7s_ease-out_both]"
-                style={{ animationDelay: "0.6s" }}
+                className="mt-3 text-xs sm:text-sm md:text-base text-white/75 max-w-xl animate-[fade-in-up_0.7s_ease-out_both]"
+                style={{ animationDelay: "0.48s" }}
               >
-                Consistent batch quality, hygienic processing and reliable bulk
-                supply for snacks, namkeen and packaged food products.
+                Whether you&apos;re buying for your family, a kirana, a
+                supermarket or distribution, Sonar Bangla gives you dependable
+                puffed rice with consistent quality, hygienic processing and
+                export-ready documentation.
               </p>
 
               {/* CTAs */}
               <div
-                className="mt-10 flex flex-wrap justify-start gap-4 animate-[fade-in-up_0.7s_ease-out_both]"
-                style={{ animationDelay: "0.7s" }}
+                className="mt-8 flex flex-wrap items-center gap-4 animate-[fade-in-up_0.7s_ease-out_both]"
+                style={{ animationDelay: "0.58s" }}
               >
                 <Link
                   href="#contact"
-                  className="btn-neon inline-flex items-center justify-center min-w-[12rem] py-3.5 text-center"
+                  className="btn-neon inline-flex items-center justify-center min-w-[13rem] px-6 py-3.5 text-center text-sm sm:text-base"
                 >
-                  Request bulk pricing
+                  Talk to our team
                 </Link>
                 <Link
                   href="#products"
-                  className="btn-neon-outline inline-flex items-center justify-center min-w-[12rem] py-3.5 text-center"
+                  className="btn-neon-outline inline-flex items-center justify-center min-w-[13rem] px-6 py-3.5 text-center text-sm sm:text-base"
                 >
-                  View product range
+                  View products & pack sizes
                 </Link>
+                <p className="w-full text-[0.7rem] sm:text-xs text-white/70">
+                  We supply in bulk and to businesses. For home use, ask your
+                  local shop for Sonar Bangla Muri.
+                </p>
+              </div>
+
+              {/* Quick reassurance strip */}
+              <div
+                className="mt-7 grid grid-cols-3 max-w-md gap-4 text-[0.7rem] sm:text-xs text-white/80 animate-[fade-in-up_0.7s_ease-out_both]"
+                style={{ animationDelay: "0.68s" }}
+              >
+                <div className="border-l border-white/25 pl-3">
+                  <div className="text-sm sm:text-base font-semibold text-white">
+                    15+ years
+                  </div>
+                  <div className="mt-0.5 text-white/65">
+                    trusted by B2B buyers
+                  </div>
+                </div>
+                <div className="border-l border-white/25 pl-3">
+                  <div className="text-sm sm:text-base font-semibold text-white">
+                    Stone-free
+                  </div>
+                  <div className="mt-0.5 text-white/65">
+                    carefully cleaned puffed rice
+                  </div>
+                </div>
+                <div className="border-l border-white/25 pl-3">
+                  <div className="text-sm sm:text-base font-semibold text-white">
+                    Export ready
+                  </div>
+                  <div className="mt-0.5 text-white/65">
+                    FSSAI & supporting documents
+                  </div>
+                </div>
               </div>
             </div>
 
-            {/* Key highlights — card grid */}
+            {/* Right: Brand pack focus (own brand, not private label) */}
             <div
-              className="animate-[fade-in-up_0.7s_ease-out_both]"
-              style={{ animationDelay: "0.8s" }}
+              className="relative animate-[fade-in-up_0.7s_ease-out_both]"
+              style={{ animationDelay: "0.72s" }}
             >
-              <div className="grid gap-3 sm:grid-cols-3">
-                <div className="group rounded-xl border border-white/15 bg-white/[0.07] p-5 backdrop-blur-sm transition-colors hover:border-accent/40 hover:bg-white/[0.1]">
-                  <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-white/20 text-white ring-1 ring-white/30">
-                    <svg
-                      className="h-5 w-5"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      aria-hidden
-                    >
-                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                    </svg>
-                  </div>
-                  <h3 className="mt-4 text-sm font-semibold uppercase tracking-wider text-white">
-                    FSSAI approved
-                  </h3>
-                  <p className="mt-1.5 text-xs leading-relaxed text-white/75">
-                    Compliant processes and documentation for retail and export.
-                  </p>
+              {/* Glow accents */}
+              <div className="pointer-events-none absolute -top-10 -right-6 h-40 w-40 rounded-full bg-accent/40 blur-3xl" />
+              <div className="pointer-events-none absolute -bottom-12 -left-10 h-40 w-40 rounded-full bg-neon-glow/35 blur-3xl" />
+
+              <div className="relative overflow-hidden rounded-3xl border border-white/14 bg-gradient-to-br from-black/70 via-violet-900/70 to-black/85 p-5 sm:p-6 md:p-7 shadow-[0_22px_60px_rgba(0,0,0,0.85)]">
+                {/* Corner badge */}
+                <div className="absolute right-4 top-4 rounded-full bg-emerald-500 px-3 py-1 text-[0.65rem] font-semibold uppercase tracking-[0.18em] z-10 text-emerald-50 shadow-lg shadow-emerald-500/60">
+                  Fast moving SKU
                 </div>
-                <div className="group rounded-xl border border-white/15 bg-white/[0.07] p-5 backdrop-blur-sm transition-colors hover:border-accent/40 hover:bg-white/[0.1]">
-                  <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-white/20 text-white ring-1 ring-white/30">
-                    <svg
-                      className="h-5 w-5"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      aria-hidden
-                    >
-                      <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
-                      <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
-                      <line x1="12" y1="22.08" x2="12" y2="12" />
-                    </svg>
+
+                <div className="flex flex-col gap-7">
+                  {/* Big pack mock focused on Sonar Bangla */}
+                  <div className="relative mx-auto mt-1 aspect-[4/3] w-48 sm:w-56 md:w-64 lg:w-72">
+                    <div className="absolute inset-4 rounded-[1.9rem] bg-gradient-to-br from-white/25 via-white/5 to-white/0 blur-xl" />
+                    <div className="relative h-full w-full rounded-[1.9rem] border border-white/25 bg-gradient-to-br from-amber-100 via-amber-50 to-slate-100 shadow-[0_40px_80px_rgba(15,23,42,0.7)] flex flex-col items-center justify-center overflow-hidden">
+                      <div className="relative h-16  sm:h-32 sm:w-52 mb-3">
+                        <Image
+                          src="/img/sbm_eng_flat_by_kspl2.svg"
+                          alt="Sonar Bangla Muri"
+                          fill
+                          className="object-contain brightness-0 opacity-70"
+                        />
+                      </div>
+                      <span className="text-sm font-semibold uppercase tracking-[0.22em] text-slate-900/80">
+                        Puffed Rice
+                      </span>
+                    </div>
                   </div>
-                  <h3 className="mt-4 text-sm font-semibold uppercase tracking-wider text-white">
-                    Custom bag sizes
-                  </h3>
-                  <p className="mt-1.5 text-xs leading-relaxed text-white/75">
-                    Any size custom bags for private labels and brands.
-                  </p>
-                </div>
-                <div className="group rounded-xl border border-white/15 bg-white/[0.07] p-5 backdrop-blur-sm transition-colors hover:border-accent/40 hover:bg-white/[0.1]">
-                  <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-white/20 text-white ring-1 ring-white/30">
-                    <svg
-                      className="h-5 w-5"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      aria-hidden
-                    >
-                      <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
-                      <polyline points="9 22 9 12 15 12 15 22" />
-                    </svg>
+
+                  <div>
+                    <h3 className="text-sm sm:text-base font-semibold uppercase tracking-[0.22em] text-white/85">
+                      Why shops choose us
+                    </h3>
+                    <ul className="mt-2 space-y-1.5 text-xs sm:text-sm text-white/80">
+                      <li className="flex items-start gap-2">
+                        <span className="mt-1 h-1.5 w-1.5 rounded-full bg-accent" />
+                        <span>
+                          Customers recognise and ask for the Sonar Bangla
+                          brand.
+                        </span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="mt-1 h-1.5 w-1.5 rounded-full bg-accent" />
+                        <span>
+                          Reliable, batch-consistent quality that cuts down
+                          complaints.
+                        </span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="mt-1 h-1.5 w-1.5 rounded-full bg-accent" />
+                        <span>
+                          Smooth to work with for wholesale, modern trade and
+                          export.
+                        </span>
+                      </li>
+                    </ul>
                   </div>
-                  <h3 className="mt-4 text-sm font-semibold uppercase tracking-wider text-white">
-                    Wholesale & export
-                  </h3>
-                  <p className="mt-1.5 text-xs leading-relaxed text-white/75">
-                    Trusted by distributors, supermarkets and manufacturers.
-                  </p>
+
+                  <div className="mt-1 grid grid-cols-2 gap-3 text-[0.7rem] sm:text-xs text-white/80">
+                    <div className="rounded-xl border border-white/15 bg-white/5 p-3">
+                      <div className="text-[0.65rem] uppercase tracking-[0.16em] text-white/60">
+                        Popular packs
+                      </div>
+                      <div className="mt-1 text-xs font-semibold text-white">
+                        250g · 500g · 1kg
+                      </div>
+                    </div>
+                    <div className="rounded-xl border border-white/15 bg-white/5 p-3">
+                      <div className="text-[0.65rem] uppercase tracking-[0.16em] text-white/60">
+                        Ideal buyer
+                      </div>
+                      <div className="mt-1 text-xs font-semibold text-white">
+                        Distributors, wholesalers, grocery shops
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

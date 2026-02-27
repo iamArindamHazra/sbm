@@ -48,11 +48,11 @@ export default function Header() {
             onClick={() => setMenuOpen(false)}
           >
             <Image
-              src="/img/logo2.webp"
+              src="/img/sbm_eng_flat_by_kspl2.svg"
               alt="Sonar Bangla Muri"
-              width={48}
-              height={48}
-              className="block h-12 w-12"
+              width={72}
+              height={52}
+              className="block h-14 brightness-0 invert"
             />
             <span className="hidden text-sm font-semibold tracking-wide text-gray-100/90 xs:inline">
               Sonar Bangla Muri

@@ -1,6 +1,6 @@
 # Sonar Bangla Muri
 
-[![N|Solid](https://www.krishnasagar.net/img/logo2.webp)](https://krishnasagar.net)
+[![N|Solid](https://www.krishnasagar.net/img/sbm_eng_flat_by_kspl2.svg)](https://krishnasagar.net)
 
 Sonar Bangla Muri is one of the best puffed rice making company in India since october 2009. Their products are made in West Bengal and we deliver it through out India.
 

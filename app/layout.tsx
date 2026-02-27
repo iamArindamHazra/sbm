@@ -71,7 +71,7 @@ const organizationSchema = {
   "@type": "Organization",
   name: site.name,
   url: site.url,
-  logo: `${site.url}/img/logo2.webp`,
+  logo: `${site.url}/img/sbm_eng_flat_by_kspl2.svg`,
   sameAs: site.social.map((social) => social.href),
   contactPoint: [
     {
