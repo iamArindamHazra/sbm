@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import FlippingLogo from "./FlippingLogo";
 
 export default function Banner() {
   return (
@@ -104,7 +105,7 @@ export default function Banner() {
                   href="#products"
                   className="btn-neon-outline inline-flex items-center justify-center min-w-[13rem] px-6 py-3.5 text-center text-sm sm:text-base"
                 >
-                  View products & pack sizes
+                  View products
                 </Link>
                 <p className="w-full text-[0.7rem] sm:text-xs text-white/70">
                   We supply in bulk and to businesses. For home use, ask your
@@ -155,8 +156,8 @@ export default function Banner() {
 
               <div className="relative overflow-hidden rounded-3xl border border-white/14 bg-gradient-to-br from-black/70 via-violet-900/70 to-black/85 p-5 sm:p-6 md:p-7 shadow-[0_22px_60px_rgba(0,0,0,0.85)]">
                 {/* Corner badge */}
-                <div className="absolute right-4 top-4 rounded-full bg-emerald-500 px-3 py-1 text-[0.65rem] font-semibold uppercase tracking-[0.18em] z-10 text-emerald-50 shadow-lg shadow-emerald-500/60">
-                  Fast moving SKU
+                <div className="absolute right-4 top-4 rounded-full bg-emerald-500 px-3 py-1 text-3xs sm:text-2xs font-semibold uppercase tracking-[0.18em] z-10 text-emerald-50 shadow-lg shadow-emerald-500/60">
+                  Quick selling product
                 </div>
 
                 <div className="flex flex-col gap-7">
@@ -164,13 +165,8 @@ export default function Banner() {
                   <div className="relative mx-auto mt-1 aspect-[4/3] w-48 sm:w-56 md:w-64 lg:w-72">
                     <div className="absolute inset-4 rounded-[1.9rem] bg-gradient-to-br from-white/25 via-white/5 to-white/0 blur-xl" />
                     <div className="relative h-full w-full rounded-[1.9rem] border border-white/25 bg-gradient-to-br from-amber-100 via-amber-50 to-slate-100 shadow-[0_40px_80px_rgba(15,23,42,0.7)] flex flex-col items-center justify-center overflow-hidden">
-                      <div className="relative h-16 w-40 sm:h-32 sm:w-52 mb-3">
-                        <Image
-                          src="/img/sbm_eng_flat_by_kspl2.svg"
-                          alt="Sonar Bangla Muri"
-                          fill
-                          className="object-contain brightness-0 opacity-70"
-                        />
+                      <div className="mb-3">
+                        <FlippingLogo />
                       </div>
                       <span className="text-sm font-semibold uppercase tracking-[0.22em] text-slate-900/80">
                         Puffed Rice
@@ -184,21 +180,21 @@ export default function Banner() {
                     </h3>
                     <ul className="mt-2 space-y-1.5 text-xs sm:text-sm text-white/80">
                       <li className="flex items-start gap-2">
-                        <span className="mt-1 h-1.5 w-1.5 rounded-full bg-accent" />
+                        <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent" />
                         <span>
                           Customers recognise and ask for the Sonar Bangla
                           brand.
                         </span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <span className="mt-1 h-1.5 w-1.5 rounded-full bg-accent" />
+                        <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent" />
                         <span>
                           Reliable, batch-consistent quality that cuts down
                           complaints.
                         </span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <span className="mt-1 h-1.5 w-1.5 rounded-full bg-accent" />
+                        <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent" />
                         <span>
                           Smooth to work with for wholesale, modern trade and
                           export.
@@ -209,15 +205,15 @@ export default function Banner() {
 
                   <div className="mt-1 grid grid-cols-2 gap-3 text-[0.7rem] sm:text-xs text-white/80">
                     <div className="rounded-xl border border-white/15 bg-white/5 p-3">
-                      <div className="text-[0.65rem] uppercase tracking-[0.16em] text-white/60">
+                      <div className="text-2xs uppercase tracking-[0.16em] text-white/60">
                         Available packs
                       </div>
                       <div className="mt-1 text-xs font-semibold text-white">
-                        250g · 500g · 1kg · Custom size
+                        250g · 500g · 1kg
                       </div>
                     </div>
                     <div className="rounded-xl border border-white/15 bg-white/5 p-3">
-                      <div className="text-[0.65rem] uppercase tracking-[0.16em] text-white/60">
+                      <div className="text-2xs uppercase tracking-[0.16em] text-white/60">
                         Ideal buyer
                       </div>
                       <div className="mt-1 text-xs font-semibold text-white">

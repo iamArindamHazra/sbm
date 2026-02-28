@@ -1,6 +1,48 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+/* Ensure Tailwind scans app and components (helps dev pick up new classes) */
+@source "../components";
+@source ".";
+
+/* Violet + neon theme for 2026 glassmorphism redesign */
+@theme {
+  /* Custom font sizes (so variants like sm:text-2xs work in dev) */
+  --text-3xs: 0.5rem;
+  --text-2xs: 0.65rem;
+  /* Colors */
+  --color-primary: #7c3aed;
+  --color-primary-dark: #5b21b6;
+  --color-primary-light: #8b5cf6;
+  --color-accent: #a78bfa;
+  --color-neon: #c4b5fd;
+  --color-neon-glow: #e9d5ff;
+  --color-background: #0f0a1e;
+  --color-background-alt: #1a1029;
+  --color-background-muted: #251a35;
+  --color-surface: rgba(139, 92, 246, 0.08);
+  --color-surface-hover: rgba(139, 92, 246, 0.15);
+
+  /* Fonts (Next.js injects --font-jakarta, --font-outfit via layout) */
+  --font-sans: var(--font-jakarta), "Plus Jakarta Sans", ui-sans-serif, sans-serif;
+  --font-display: var(--font-outfit), "Outfit", ui-sans-serif, sans-serif;
+
+  /* Border radius */
+  --radius: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-2xl: 1.25rem;
+
+  /* Shadows */
+  --shadow-card: 0 4px 24px -4px rgba(0, 0, 0, 0.3), 0 8px 32px -8px rgba(0, 0, 0, 0.2);
+  --shadow-glass: 0 8px 32px rgba(0, 0, 0, 0.2);
+  --shadow-neon-sm: 0 0 20px rgba(167, 139, 250, 0.3);
+  --shadow-neon-md: 0 0 30px rgba(167, 139, 250, 0.4);
+  --shadow-neon-lg: 0 0 40px rgba(167, 139, 250, 0.35);
+  --shadow-navbar: 0 4px 24px rgba(0, 0, 0, 0.2);
+
+  /* Blur (for backdrop-blur-xs) */
+  --blur-xs: 2px;
+}
 
 @layer base {
   html {
